@@ -1,0 +1,124 @@
+/* pages/me/me.wxss */
+Page {
+  background: #f4f4f4;
+}
+
+.me-header {
+  position: relative;
+  width: 100%;
+  height: 413rpx;
+}
+
+.me-userInfo {
+  position: absolute;
+  display: flex;
+  top: 172rpx;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.me-header-avatar {
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  border: 5rpx solid rgba(255, 255, 255, 0.8);
+  background: #fff;
+}
+
+.me-header-avatar-btn {
+  padding: 0;
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  border: 5rpx solid rgba(255, 255, 255, 0.8);
+}
+
+.me-header-avatar-btn::after {
+  border: none;
+}
+
+.me-header-avatar-btn .btn-image {
+  width: 164rpx;
+  height: 164rpx;
+}
+
+.me-header-text {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.me-header-text-btn {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  background: #fff;
+}
+
+.me-header-text-btn::after {
+  border: none;
+}
+
+.me-header-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.me-navigator {
+  position: relative;
+  display: inline-flex;
+  padding: 0 24rpx;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 93rpx;
+  align-items: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.me-navigator .me-navigator-text {
+  margin-left: 16rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.me-navigator .me-navigatior-arrow {
+  position: absolute;
+  right: 24rpx;
+  width: 14rpx;
+  height: 26rpx;
+  z-index: 10;
+}
+
+.me-get-wrapper {
+  margin-top: 16rpx;
+  padding: 24rpx;
+}
+
+.me-get-wrapper .me-get {
+  margin: auto;
+  font-size: 30rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  background: #ff5a44;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.btn-contact-view{
+  width: 100%;
+  position: fixed;
+  bottom: 60rpx;
+}
+
+.btn-contact{
+  line-height: 80rpx;
+  width: 300rpx;
+  height: 80rpx;
+  background: #ff5a44;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 70rpx;
+}

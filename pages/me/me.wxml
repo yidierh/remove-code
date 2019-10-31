@@ -1,0 +1,26 @@
+<!--pages/me/me.wxml-->
+<view class='me-container'>
+  <view class='me-header'>
+    <image class='me-header-banner' src='../../images/me-banner.png'></image>
+    <view class='me-userInfo'>
+      <image class='me-header-avatar' src='{{userInfo.avatarUrl}}' wx:if='{{userInfo}}'></image>
+      <button class='me-header-avatar-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:else>
+      <image class='btn-image' src='../../images/avatar.png'></image>
+      </button>
+      <text class='me-header-text' wx:if='{{userInfo}}'>用户名：{{userInfo.nickName}}</text>
+      <button class='me-header-text-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:else>点击授权登录</button>
+    </view>
+  </view>
+  <navigator class='me-navigator' url='/pages/about/about'>
+    <icon type='info' size='20' color='#cdcdcd' />
+    <text class='me-navigator-text'>关于我们</text>
+    <image class='me-navigatior-arrow' src='../../images/arrow.png'></image>
+  </navigator>
+
+  <view class='btn-contact-view'>
+    <button class="btn-contact" open-type='contact'>
+       意见反馈
+    </button>
+  </view>
+  
+</view>

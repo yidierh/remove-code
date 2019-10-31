@@ -1,0 +1,30 @@
+<!--pages/remove/remove.wxml-->
+<view class='container'>
+  <image src='{{icon}}' class='remove-img'></image>
+  <view class='remove-content'>
+    <text class='remove-tips'>请务必确认视频在APP中无水印，不然无法去掉水印</text>
+    <view class='remove-input-wrapper'>
+    <input class='remove-input' placeholder='{{placeholder}}' bindinput='removeUrl' value='{{removeUrl}}'></input>
+    <image class='remove-clear' bindtap='clearUrl' src='../../images/clear.png' wx:if='{{showCancel}}'></image>
+    </view>
+    <button class='remove-btn-danger' open-type="getUserInfo" bindgetuserinfo="getVedio">获取视频</button>
+  </view>
+
+  <view class='remove-getContent' wx:if='{{vedioUrl}}'>
+    <video class='remove-vedio' src='{{vedioUrl}}'></video>
+    <input class='url-wrapper' value='{{vedioUrl}}' disabled='true' bindtap='copyUrl'></input>
+    <view class='remove-btn-wrapper'>
+    <button class='remove-btn-danger bottom' bindtap='saveVedio'>保存下载视频</button>
+    <button class='remove-btn-primary bottom' bindtap='copyUrl'>复制视频链接</button>
+    </view>
+    <progress wx:if='{{showProgress}}' percent="{{percent}}" color='#ff5a44' border-radius="10" stroke-width="4" active='{{downStart}}' active-mode="forwards"/>
+  </view>
+
+  <view class='copy-tips' wx:else>
+  <ad unit-id="adunit-5831be0509035f9e"></ad>
+  <text class='tips-title'>使用说明</text>
+  <text class='tips-text'>1.复制您想要去除水印的短视频链接</text>
+  <text class='tips-text'>2.把复制的链接粘贴在输入框中（可以包含文字）</text>
+  <text class='tips-text'>3.点击获取视频即可获得无水印链接</text>
+  </view>
+</view>

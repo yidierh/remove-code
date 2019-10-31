@@ -1,0 +1,13 @@
+/* pages/about/about.wxss */
+Page {
+  background: #f4f4f4;
+}
+
+.container {
+  padding: 50rpx 32rpx;
+}
+
+.container .about {
+  font-size: 32rpx;
+  color: #333;
+}

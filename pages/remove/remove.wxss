@@ -1,0 +1,119 @@
+/* pages/remove/remove.wxss */
+
+.container {
+  padding: 40rpx 75rpx;
+  box-sizing: border-box;
+}
+
+.container .remove-img {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.container .remove-content {
+  margin-top: 72rpx;
+  width: 100%;
+}
+
+.container .remove-content .remove-tips {
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  color: #ff5a44;
+  text-align: center;
+}
+
+.container .remove-content .remove-input-wrapper {
+  position: relative;
+}
+
+.container .remove-content .remove-input-wrapper .remove-input {
+  margin-top: 16rpx;
+  padding: 0 72rpx 0 24rpx;
+  width: 100%;
+  height: 74rpx;
+  font-size: 30rpx;
+  border: 2rpx solid #d4d4d4;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+}
+
+.container .remove-content .remove-input-wrapper .remove-clear {
+  position: absolute;
+  top: 22rpx;
+  right: 24rpx;
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.container .remove-btn-danger {
+  margin-top: 32rpx;
+  font-size: 30rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  background: #ff5a44;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.container .remove-getContent {
+  margin-top: 72rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.container .remove-getContent .url-wrapper {
+  font-size: 24rpx;
+  color: #ff5a44;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .remove-getContent .remove-vedio {
+  width: 600rpx;
+  height: 450rpx;
+}
+
+.container .remove-getContent .remove-btn-wrapper {
+  margin-top: 32rpx;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.container .remove-getContent .remove-btn-wrapper .remove-btn-primary {
+  margin-left: 48rpx;
+  background: #fff;
+  height: 82rpx;
+  line-height: 82rpx;
+  color: #ff5a44;
+  border: 2rpx solid #ff5a44;
+}
+
+.container .remove-getContent .remove-btn-wrapper .bottom {
+  margin-top: 0;
+  width: 276rpx;
+}
+
+.container .copy-tips {
+  display: flex;
+  flex-direction: column;
+  margin-top: 148rpx;
+}
+
+.container .copy-tips .tips-title {
+  font-size: 28rpx;
+  text-align: center;
+  color: #333;
+}
+
+.container .copy-tips .tips-text {
+  margin-top: 32rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+
+/* 进度条 */
+progress {
+  margin-top: 20rpx;
+}
