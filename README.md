@@ -10,4 +10,4 @@
 
 yidierh@gmail.com
 
-![小程序二维码](https://gitee.com/yidierh/remove-code/raw/master/code.jpg)
+![小程序二维码](https://raw.githubusercontent.com/eddieyd/remove-code/master/code.jpg)
