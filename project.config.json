@@ -1,4 +1,4 @@
-{
+﻿{
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -13,11 +13,13 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.4",
 	"appid": "",
-	"projectname": "remove-code-free",
+	"projectname": "remove-code",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

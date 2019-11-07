@@ -21,6 +21,10 @@ Page {
   align-items: center;
 }
 
+.container .home-items__disable {
+  opacity: .5;
+}
+
 .container .container-top {
   display: inline-flex;
   width: 100%;

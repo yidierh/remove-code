@@ -1,13 +1,13 @@
 <!--pages/home/home.wxml-->
 <view class='container'>
   <view class='container-top'>
-    <navigator class='home-items-first' wx:for="{{homeData}}" wx:key="index" url='/pages/remove/remove?type={{item.type}}' wx:if='{{index <= 1}}'>
+    <navigator class='home-items-first {{ index === 1 ? "home-items__disable" : "" }}' wx:for="{{homeData}}" wx:key="index" url='{{index === 0 ? "/pages/remove/remove?type="+item.type : ""}}' wx:if='{{index <= 1}}'>
       <image class='items-img-first' src='{{item.icon}}'></image>
       <text class='items-text-first'>{{item.text}}</text>
     </navigator>
   </view>
   <view class='container-bottom'>
-    <navigator class='home-items' wx:for="{{homeData}}" wx:key="index" url='/pages/remove/remove?type={{item.type}}' wx:if='{{index > 1}}'>
+    <navigator class='home-items home-items__disable' wx:for="{{homeData}}" wx:key="index" url='{{index === 0 ? "/pages/remove/remove?type="+item.type : ""}}' wx:if='{{index > 1}}'>
       <image class='items-img' src='{{item.icon}}'></image>
       <text class='items-text'>{{item.text}}</text>
     </navigator>
